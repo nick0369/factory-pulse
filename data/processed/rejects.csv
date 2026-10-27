@@ -1,0 +1,2 @@
+observation_id,date,segment,planned_minutes,downtime_minutes,units,defects,reason
+999999,2026-01-03,Line C,426,-5.0,635,22,"invalid required value, category, numeric range or business constraint"

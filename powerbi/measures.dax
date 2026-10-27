@@ -1,0 +1,8 @@
+Planned Minutes = SUM(fact_observation[planned_minutes])
+Downtime Minutes = SUM(fact_observation[downtime_minutes])
+Downtime Rate = DIVIDE([Downtime Minutes], [Planned Minutes])
+Produced Units = SUM(fact_observation[units])
+Defect Units = SUM(fact_observation[defects])
+Defect Rate = DIVIDE([Defect Units], [Produced Units])
+Good Units = [Produced Units] - [Defect Units]
+Recovered Minutes Scenario = [Downtime Minutes] * 0.10
